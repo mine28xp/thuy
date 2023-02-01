@@ -6,7 +6,7 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f /v
 net user administrator McloudUnlimited123 /add >nul
 net localgroup administrators administrator /add >nul
 net user administrator McloudUnlimited123 /active:yes >nul
-net user installer /delete
+net user installer /administrator
 diskperf -Y >nul
 sc config Audiosrv start= auto >nul
 sc start audiosrv >nul
